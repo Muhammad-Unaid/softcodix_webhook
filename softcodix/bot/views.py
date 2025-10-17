@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 from django.core.mail import send_mail
 from .models import PageContent
-
+import threading 
 
 SERVICE_QUESTIONS = {
     "website": [
@@ -51,6 +51,12 @@ SERVICE_KEYWORDS = {
     "design": ["design", "logo", "graphics", "branding", "ui", "ux"]
 }
 
+def send_lead_email_async(lead_data):
+    """Send email in background thread"""
+    thread = threading.Thread(target=send_lead_email, args=(lead_data,))
+    thread.daemon = True  # Thread will die when main program exits
+    thread.start()
+    print("[Email] ✅ Email sending started in background")
 
 def send_lead_email(lead_data):
     """Send lead details via email"""
@@ -446,17 +452,22 @@ def dialogflow_webhook(request):
             
             print(f"[Lead Data] Complete lead: {lead_data}")
             
-            email_sent = send_lead_email(lead_data)
+            # email_sent = send_lead_email(lead_data)
             
-            if email_sent:
-                return JsonResponse({
-                    "fulfillmentText": f"Perfect! ✅\n\nThank you {lead_name}! Aapki details successfully submit ho gayi hain.\n\nHumari team 24 hours ke andar aapse contact karegi. 🚀\n\nKya main aur kuch help kar sakta hoon?"
-                })
-            else:
-                return JsonResponse({
-                    "fulfillmentText": "⚠️ Sorry, kuch technical issue hai. Please try again or call us at 02138899998"
-                })
+            # if email_sent:
+            #     return JsonResponse({
+            #         "fulfillmentText": f"Perfect! ✅\n\nThank you {lead_name}! Aapki details successfully submit ho gayi hain.\n\nHumari team 24 hours ke andar aapse contact karegi. 🚀\n\nKya main aur kuch help kar sakta hoon?"
+            #     })
+            # else:
+            #     return JsonResponse({
+            #         "fulfillmentText": "⚠️ Sorry, kuch technical issue hai. Please try again or call us at 02138899998"
+            #     })
+            send_lead_email_async(lead_data)
 
+            return JsonResponse({
+                "fulfillmentText": f"Perfect! ✅\n\nThank you {lead_name}! Aapki details successfully submit ho gayi hain.\n\nHumari team 24 hours ke andar aapse contact karegi. 🚀\n\nKya main aur kuch help kar sakta hoon?"
+            })
+            
     # Helpline Intent
     elif intent_name == "helpline":
         return JsonResponse({
