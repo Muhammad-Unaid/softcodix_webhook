@@ -140,6 +140,6 @@ EMAIL_HOST_USER = 'xcapalerts@gmail.com'
 EMAIL_HOST_PASSWORD = 'wroszlkwftjiagvd'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-LEAD_EMAIL = '1aryankhan1100@gmail.com'
+LEAD_EMAIL = 'queries@softcodix.com'
 
 
