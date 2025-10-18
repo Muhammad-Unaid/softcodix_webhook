@@ -195,7 +195,7 @@ def send_lead_email(lead_data):
                 
                 <div style="background: linear-gradient(135deg, #1B2A4A 0%, #0D1625 100%); padding: 40px 20px; text-align: center;">
                     <div style="background: white; display: inline-block; padding: 15px 30px; border-radius: 8px;">
-                        <img src="data:image/png;base64,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" alt="Softcodix" style="width: 280px; height: auto; display: block;">
+                        <h2 style="color: #E31E24; margin: 0;">SOFTCODIX</h2>
                     </div>
                     <h1 style="color: white; margin: 20px 0 0 0; font-size: 28px;">🎉 New Lead Alert!</h1>
                 </div>
@@ -259,7 +259,7 @@ def send_lead_email(lead_data):
                 
                 <div style="background: linear-gradient(135deg, #1B2A4A 0%, #0D1625 100%); padding: 40px 20px; text-align: center;">
                     <div style="background: white; display: inline-block; padding: 15px 30px; border-radius: 8px;">
-                        <img src="data:image/png;base64,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" alt="Softcodix" style="width: 280px; height: auto; display: block;">
+                        <h2 style="color: #E31E24; margin: 0;">SOFTCODIX</h2>
                     </div>
                     <h1 style="color: white; margin: 20px 0 0 0; font-size: 28px;">Thank You! 🎉</h1>
                 </div>
@@ -637,14 +637,37 @@ def dialogflow_webhook(request):
             
             print(f"[Contact] Email collected: {email}")
             
-            lead_name = context_params.get("name", "Not provided")
-            lead_phone = context_params.get("phone", "Not provided")
+            # ✅ FIX: Manually extract from parameters FIRST, then fallback to context
+            param_name = parameters.get("name", {}).get("name") if isinstance(parameters.get("name"), dict) else parameters.get("name")
+            param_phone = parameters.get("phone")
+            
+                # If parameters are empty, get from context
+            lead_name = param_name if param_name else context_params.get("name", "Guest User")
+            lead_phone = param_phone if param_phone else context_params.get("phone", "Not provided")
+            
+                # Clean empty strings
+            if not lead_name or lead_name.strip() == '':
+                lead_name = "Guest User"
+            if not lead_phone or lead_phone.strip() == '':
+                lead_phone = "Not provided"
+            
+            # lead_name = context_params.get("name", "Guest User")
+            # lead_phone = context_params.get("phone", "Not provided")
 
-            print(f"[Lead Data] Name: {lead_name}")
-            print(f"[Lead Data] Phone: {lead_phone}")
+            # print(f"[Lead Data] Name: {lead_name}")
+            # print(f"[Lead Data] Phone: {lead_phone}")
+            # print(f"[Lead Data] Email: {email}")
+            # print(f"[Lead Data via Fallback] Full context_params: {context_params}")  # ✅ ADD THIS
+            
+            print(f"[Lead Data] Name from params: {param_name}")
+            print(f"[Lead Data] Name from context: {context_params.get('name')}")
+            print(f"[Lead Data] Final Name: {lead_name}")
+            print(f"[Lead Data] Phone from params: {param_phone}")
+            print(f"[Lead Data] Phone from context: {context_params.get('phone')}")
+            print(f"[Lead Data] Final Phone: {lead_phone}")
             print(f"[Lead Data] Email: {email}")
-            print(f"[Lead Data via Fallback] Full context_params: {context_params}")  # ✅ ADD THIS
-
+            print(f"[DEBUG] Full context_params: {context_params}")
+                    
             lead_data = {
                 "service": service,
                 "name": lead_name,
@@ -785,8 +808,57 @@ def dialogflow_webhook(request):
                     "fulfillmentText": "⚠️ Session expired. Please start again."
                 })
             
+            # if step == "name":
+            #     name = user_query.strip()
+            #     print(f"[Contact via Fallback] Name: {name}")
+                
+            #     return JsonResponse({
+            #         "fulfillmentText": f"Thanks {name}! 😊\n\nAapka phone number kya hai?",
+            #         "outputContexts": [
+            #             {
+            #                 "name": f"{session}/contexts/collect-details",
+            #                 "lifespanCount": 10,
+            #                 "parameters": {
+            #                     "service": service,
+            #                     "answers": answers,
+            #                     "name": name,
+            #                     "step": "phone"
+            #                 }
+            #             }
+            #         ]
+            #     })
+            
+            # elif step == "phone":
+            #     phone = user_query.strip()
+            #     print(f"[Contact via Fallback] Phone: {phone}")
+                
+            #     return JsonResponse({
+            #         "fulfillmentText": "Great! 📱\n\nAur aapka email address?",
+            #         "outputContexts": [
+            #             {
+            #                 "name": f"{session}/contexts/collect-details",
+            #                 "lifespanCount": 10,
+            #                 "parameters": {
+            #                     "service": service,
+            #                     "answers": answers,
+            #                     "name": context_params.get("name"),
+            #                     "phone": phone,
+            #                     "step": "email"
+            #                 }
+            #             }
+            #         ]
+            #     })
+            
             if step == "name":
+                # Get name from user query directly
                 name = user_query.strip()
+                
+                # Validate
+                if len(name) < 2:
+                    return JsonResponse({
+                        "fulfillmentText": "⚠️ Please enter a valid name (at least 2 characters)."
+                    })
+                
                 print(f"[Contact via Fallback] Name: {name}")
                 
                 return JsonResponse({
@@ -798,16 +870,27 @@ def dialogflow_webhook(request):
                             "parameters": {
                                 "service": service,
                                 "answers": answers,
-                                "name": name,
+                                "name": name,  # ✅ SAVE HERE
                                 "step": "phone"
                             }
                         }
                     ]
                 })
-            
+
             elif step == "phone":
+                # Get phone from user query directly
                 phone = user_query.strip()
+                
+                # Validate
+                if len(phone) < 10:
+                    return JsonResponse({
+                        "fulfillmentText": "⚠️ Please enter a valid phone number (at least 10 digits)."
+                    })
+                
                 print(f"[Contact via Fallback] Phone: {phone}")
+                
+                # ✅ GET NAME FROM CONTEXT
+                saved_name = context_params.get("name", "Guest User")
                 
                 return JsonResponse({
                     "fulfillmentText": "Great! 📱\n\nAur aapka email address?",
@@ -818,8 +901,8 @@ def dialogflow_webhook(request):
                             "parameters": {
                                 "service": service,
                                 "answers": answers,
-                                "name": context_params.get("name"),
-                                "phone": phone,
+                                "name": saved_name,  # ✅ PRESERVE NAME
+                                "phone": phone,      # ✅ SAVE PHONE
                                 "step": "email"
                             }
                         }
@@ -828,14 +911,53 @@ def dialogflow_webhook(request):
             
             elif step == "email":
                 email = user_query.strip()
-                print(f"[Contact via Fallback] Email: {email}")
+    
+                print(f"[Contact] Email collected: {email}")
+                
+                # ✅ MAIN FIX: Extract name/phone from PREVIOUS context responses
+                # Don't rely on current parameters - they're empty!
+                
+                # Get from context (saved from previous steps)
+                context_name = context_params.get("name", "")
+                context_phone = context_params.get("phone", "")
+                
+                # Also check parameters (backup)
+                param_name = parameters.get("name")
+                param_phone = parameters.get("phone")
+                
+                # Extract from dict if needed
+                if isinstance(param_name, dict):
+                    param_name = param_name.get("name", "")
+                if isinstance(param_phone, dict):
+                    param_phone = param_phone.get("phone", "")
+                
+                # Priority: Use context values (from previous steps)
+                lead_name = context_name if context_name and context_name.strip() else param_name
+                lead_phone = context_phone if context_phone and context_phone.strip() else param_phone
+                
+                # Final fallback
+                if not lead_name or lead_name.strip() == '':
+                    lead_name = "Guest User"
+                if not lead_phone or lead_phone.strip() == '':
+                    lead_phone = "Not provided"
 
-                lead_name = context_params.get("name", "Not provided")
-                lead_phone = context_params.get("phone", "Not provided")
+                print(f"[Contact] ✅ Name: {lead_name}")
+                print(f"[Contact] ✅ Phone: {lead_phone}")
+                print(f"[Contact] ✅ Email: {email}")
+                print(f"[DEBUG] Context name: '{context_name}'")
+                print(f"[DEBUG] Context phone: '{context_phone}'")
+                print(f"[DEBUG] Param name: '{param_name}'")
+                print(f"[DEBUG] Param phone: '{param_phone}'")
 
-                print(f"[Lead Data via Fallback] Name: {lead_name}")
-                print(f"[Lead Data via Fallback] Phone: {lead_phone}")
-                print(f"[Lead Data via Fallback] Email: {email}")
+                # email = user_query.strip()
+                # print(f"[Contact via Fallback] Email: {email}")
+
+                # lead_name = context_params.get("name", "Not provided")
+                # lead_phone = context_params.get("phone", "Not provided")
+
+                # print(f"[Lead Data via Fallback] Name: {lead_name}")
+                # print(f"[Lead Data via Fallback] Phone: {lead_phone}")
+                # print(f"[Lead Data via Fallback] Email: {email}")
 
                 lead_data = {
                     "service": service,
