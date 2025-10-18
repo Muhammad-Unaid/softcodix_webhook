@@ -194,8 +194,8 @@ def send_lead_email(lead_data):
             <div style="max-width: 650px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.12);">
                 
                 <div style="background: linear-gradient(135deg, #1B2A4A 0%, #0D1625 100%); padding: 40px 20px; text-align: center;">
-                    <div style="background: white; display: inline-block; padding: 15px 30px; border-radius: 8px;">
-                        <h2 style="color: #E31E24; margin: 0;">SOFTCODIX</h2>
+                    <div style="background: white; display: inline-block; padding: 15px 30px; border-radius: 20px;">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/image-icons.appspot.com/o/Softcodix%20Logo%20-%20Red%26Blue.png?alt=media&token=eaafceb7-ffbc-4c65-9c5c-420d294f34b8" alt="Softcodix" style="width: 280px; height: auto; display: block;">
                     </div>
                     <h1 style="color: white; margin: 20px 0 0 0; font-size: 28px;">🎉 New Lead Alert!</h1>
                 </div>
@@ -258,8 +258,8 @@ def send_lead_email(lead_data):
             <div style="max-width: 650px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.12);">
                 
                 <div style="background: linear-gradient(135deg, #1B2A4A 0%, #0D1625 100%); padding: 40px 20px; text-align: center;">
-                    <div style="background: white; display: inline-block; padding: 15px 30px; border-radius: 8px;">
-                        <h2 style="color: #E31E24; margin: 0;">SOFTCODIX</h2>
+                    <div style="background: white; display: inline-block; padding: 15px 30px; border-radius: 20px;">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/image-icons.appspot.com/o/Softcodix%20Logo%20-%20Red%26Blue.png?alt=media&token=eaafceb7-ffbc-4c65-9c5c-420d294f34b8" alt="Softcodix" style="width: 280px; height: auto; display: block;">
                     </div>
                     <h1 style="color: white; margin: 20px 0 0 0; font-size: 28px;">Thank You! 🎉</h1>
                 </div>
